@@ -16,7 +16,7 @@
 
       <% @evaluations.each do |evaluation| %>
       <tr>
-        <td><%= evaluation.reviewer_id %></td>
+        <td><%= evaluation.reviewer.created_at %></td>
         <td><%= evaluation.reviewee_id %></td>
         <td>
           <a href="/evaluations/<%= evaluation.id %>" class="btn btn-primary">Show</a>
